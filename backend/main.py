@@ -17,7 +17,7 @@ def get_athlete(am: int):
     cursor = conn.cursor()
 
     cursor.execute(
-        "SELECT firstName, Surname, AM FROM test WHERE AM=?",
+        "SELECT Name, Surname, AM FROM test WHERE AM=?",
         (am,)
     )
 
@@ -29,7 +29,7 @@ def get_athlete(am: int):
 
     return {
         "found": True,
-        "firstName": row[0],
-        "surname": row[1],
+        "Name": row[0],
+        "Surname": row[1],
         "AM": row[2]
     }
