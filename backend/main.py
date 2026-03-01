@@ -17,7 +17,7 @@ def get_athlete(am: int):
     cursor = conn.cursor()
 
     cursor.execute(
-        "SELECT Name, Surname, AM FROM test WHERE AM=?",
+        "SELECT Name, Surname, AM FROM Test WHERE AM=?",
         (am,)
     )
 
