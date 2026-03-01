@@ -33,3 +33,4 @@ def get_athlete(am: int):
         "Surname": row[1],
         "AM": row[2]
     }
+    
